@@ -1,4 +1,80 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+	background-color:Black; 
+	font-family: Arial; 
+	font: bold;
+	color:White;
+}
+
+h1 {
+	text-align: center;
+	color:grey; 
+	font-family: Verdana;
+}
+0
+.maindiv {
+	text-align: left;
+	background-color:White;
+	color:Black;
+	margin: auto;
+	width: 500px;
+	padding: 20px;
+	border-radius: 25px;
+}
+
+.allInputs {
+	padding-left: 80px;
+	vertical-align: middle; 
+}
+
+.numberInput {
+	display: inline-block;
+	padding: 0px;
+}
+
+.numberInput label {
+	position: absolute;
+}
+
+.numberInput input {
+	margin-left: 50px;
+
+}
+.sliderInput {
+	display: inline-block;
+	padding-top: 20px;
+}
+
+.sliderInput label {
+	position: absolute;
+}
+
+.sliderInput input {
+	margin-left: 71px;
+
+}
+.yearsInput {
+	padding-top: 20px;
+}
+
+.yearsInput label {
+	position: absolute;
+}
+
+.yearsInput input {
+	margin-left: 40px;
+}
+
+p {
+	line-height: 5px;
+	padding-left: 80px;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+footer {
+	text-align: left;
+}
 
 

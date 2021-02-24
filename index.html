@@ -1,16 +1,71 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div id="maindiv1" class="maindiv">
+            <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <div id="subdiv1" class="allInputs">
+                <div id="amount" class="numberInput">
+                    Amount <input type="number" id="principal">  <br/>
+                </div>
+                
+                <div id="rangeslider" class = "sliderInput">
+                    Rate <input type="range" id="sliderRange" min="1" max="20" step="0.25" value="10.25">
+                        <span id="rateValue"></span>
+                        <script>
+                            var rangeslider = document.getElementById("sliderRange");
+                            var percent = document.getElementById("rateValue");
+                            percent.innerHTML = rangeslider.value + "%";
 
-        <button onclick="compute()">Compute</button>
+                            rangeslider.onchange = function() {
+                            percent.innerHTML = this.value + "%";
+                            }
+                        </script>
+                </div>
+          
+                <div id="years" class="yearsInput">
+                No. of Years &nbsp &nbsp <label for="years"> </label> 
+                    <select type="number" id="yearsValue">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select> 
+                
+                </div>
+           
+                <span id="result"></span> <br/>
+                  <button onclick="compute()">Compute Interest</button>
+                    </div id="inform" class = "banner">
+                        <p id="banner1"></p>
+                        <p id="banner2"></p>
+                        <p id="banner3"></p>
+                        <p id="banner4"></p>
+                    <footer>&copy; Everyone Can Get Rich</footer>  
+                    </div>
+               
+            </div>
+                              
+      </div>
+
     </body>
+   
 </html>
+
+
+
+
+
+
+
