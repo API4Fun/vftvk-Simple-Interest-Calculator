@@ -22,7 +22,7 @@
                             var percent = document.getElementById("rateValue");
                             percent.innerHTML = rangeslider.value + "%";
 
-                            rangeslider.onchange = function() {
+                            rangeslider.oninput = function() {
                             percent.innerHTML = this.value + "%";
                             }
                         </script>
